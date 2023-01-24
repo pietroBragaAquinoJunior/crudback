@@ -22,7 +22,7 @@ public class UsuarioController {
         usuario.setNome(nome);
         usuario.setEmail(email);
         usuario.setTelefone(telefone);
-        return ResponseEntity.ok(usuarioService.salvar(usuario));
+        return ResponseEntity.ok(usuarioService.salvarUsuario(usuario));
     }
 
     @GetMapping("/listar-usuarios")
