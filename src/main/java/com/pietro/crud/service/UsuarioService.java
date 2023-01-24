@@ -20,7 +20,7 @@ public class UsuarioService {
     private UsuarioRepository usuarioRepository;
 
     @Transactional
-    public Usuario salvar(Usuario usuario) {
+    public Usuario salvarUsuario(Usuario usuario) {
         LOGGER.info("Salvando: " + usuario.getNome());
         return usuarioRepository.save(usuario);
     }
